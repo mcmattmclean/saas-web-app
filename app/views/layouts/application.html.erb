@@ -19,7 +19,7 @@
             <span class="icon-bar"></span>
           </button>
           <!--This "/" stands for the homepage. This bit of code is the logo/homepage link-->
-          <%= link_to "/", class: "navbar-brand" do %>
+          <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-group"></i>
             DevMatch
           <% end %>
@@ -29,7 +29,7 @@
             <!--This is the pure HTML way: <li><a href="/about">About</a></li> -->
             <!--The <%= %> are embedded ruby tags-->
             <!--Writing a simple link in ruby: <%= link_to "DISPLAYED_NAME", "/path"%>-->
-            <li><%= link_to "About", "/about"%></li>
+            <li><%= link_to "About", about_path%></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
