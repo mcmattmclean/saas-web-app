@@ -18,12 +18,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!--This href "/" stands for the homepage.-->
-          <a href="/" class="navbar-brand"><i class="fa fa-group"></i>DevMatch</a>
+          <!--This "/" stands for the homepage. This bit of code is the logo/homepage link-->
+          <%= link_to "/", class: "navbar-brand" do %>
+            <i class="fa fa-group"></i>
+            DevMatch
+          <% end %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/about">About</a></li>
+            <!--This is the pure HTML way: <li><a href="/about">About</a></li> -->
+            <!--The <%= %> are embedded ruby tags-->
+            <!--Writing a simple link in ruby: <%= link_to "DISPLAYED_NAME", "/path"%>-->
+            <li><%= link_to "About", "/about"%></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
