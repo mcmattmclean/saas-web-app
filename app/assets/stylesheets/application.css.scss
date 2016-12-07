@@ -36,14 +36,6 @@ h1, h2, h3 {
   background: linear-gradient(to left, #24C6DC , #514A9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-//Homepage styles
-.home-callout{
-  color: white;
-  margin-top: -20px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
 //Nav styles
 .navbar {
   border: none;
@@ -62,4 +54,23 @@ h1, h2, h3 {
     color: white;
     opacity: 0.75;
   }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #24C6DF;
+  }
+}
+
+//Homepage styles
+.home-callout{
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
