@@ -49,6 +49,11 @@ h1, h2, h3 {
   border: none;
 }
 
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
 //The &:hover nesting is a SASS feature, won't work in CSS!
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
