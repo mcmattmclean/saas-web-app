@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
     end
   end
 
+# This is a security feature 
   private
     def contact_params
       params.require(:contact).permit(:name, :email, :comments)
